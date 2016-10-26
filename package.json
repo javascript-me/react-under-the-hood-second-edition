@@ -5,9 +5,9 @@
   "main": "index.jsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "WEBPACK_TARGET=unfinished webpack-dev-server",
-    "finished": "WEBPACK_TARGET=finished webpack-dev-server",
-    "build": "WEBPACK_TARGET=finished NODE_ENV=production webpack"
+    "start": "set WEBPACK_TARGET=unfinished&& webpack-dev-server",
+    "finished": "set WEBPACK_TARGET=finished&& webpack-dev-server",
+    "build": "set WEBPACK_TARGET=finished&& set NODE_ENV=production webpack"
   },
   "repository": {
     "type": "git",
